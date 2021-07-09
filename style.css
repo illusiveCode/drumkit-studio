@@ -1,32 +1,40 @@
+/* ====================
+EVERYTHING
+=======================
+*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-y: hidden;
 }
 
+/* ====================
+MAIN
+=======================
+*/
 body {
   background: url("images/background.jpg");
   background-size: cover;
 }
 
 #top {
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
-  /* margin-top: 20px; */
   font-size: 1.5rem;
   color: white;
   backdrop-filter: blur(10px) brightness(40%);
   font-family: helvetica, sans-serif;
 }
 
-kbd {
-  display: block;
-  font-size: 40px;
-}
+/* ====================
+KEYS
+=======================
+*/
 
 .keys {
   min-height: 100vh;
@@ -42,6 +50,7 @@ kbd {
   margin: 1rem;
   text-align: center;
   text-transform: uppercase;
+  transition: all 0.07s;
   width: 100px;
   font-family: helvetica, sans-serif;
   font-weight: 600;
@@ -49,6 +58,17 @@ kbd {
   backdrop-filter: blur(10px) brightness(40%);
 }
 
+kbd {
+  display: block;
+  font-size: 40px;
+}
+
 span {
   color: orange;
+}
+
+.playing {
+  border-color: orange;
+  box-shadow: 0 0 10px orange;
+  transform: scale(1.1);
 }
